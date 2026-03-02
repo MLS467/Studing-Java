@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.introducao;
 
-public class Aula05EstruturasCondicionais {
+public class Aula05EstruturasCondicionais01 {
     public static void main(String[] args) {
         int idade = 15;
 
@@ -8,16 +8,18 @@ public class Aula05EstruturasCondicionais {
 
         if (isAutorizadoComprarBebida) {
             System.out.println("Autorizado a comprar bebidas alcólicas");
-        }
-
-        if (!isAutorizadoComprarBebida) {
+        }else{
             System.out.println("Não autorizado a comprar bebidas alcólicas");
         }
 
-        boolean c = false;
-
-        if (c = true) {
-            System.out.println("Dentro de algo que nunca deveria ser feito");
-        }
+//        if (!isAutorizadoComprarBebida) {
+//            System.out.println("Não autorizado a comprar bebidas alcólicas");
+//        }
+//
+//        boolean c = false;
+//
+//        if (c = true) {
+//            System.out.println("Dentro de algo que nunca deveria ser feito");
+//        }
     }
 }
