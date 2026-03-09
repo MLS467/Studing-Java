@@ -17,6 +17,8 @@ public class CarroTest01 {
         carro2.modelo = "Chevrollet";
         carro2.ano = 1995;
 
+//        carro = carro2; objeto aponta para a referência do outro objeto.
+
         System.out.println(
                 "nome " + carro.nome +"\n"+
                 "modelo " + carro.modelo +"\n"+
