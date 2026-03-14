@@ -21,5 +21,8 @@ public class CalculadoraTest01 {
             System.out.println(resultado);
         }
 
+        int[] valores = {20,10,50,60};
+//        calc.somaVarArgs(2,1,3,5);
+        calc.somaVarArgs(valores);
     }
 }
