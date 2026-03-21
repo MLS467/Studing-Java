@@ -2,28 +2,44 @@ package academy.devdojo.maratonajava.javacore.Gassossiacao.dominio;
 
 public class Jogador {
     private String nome;
-    private Time time;
+    private Time[] time;
 
     public Jogador(String nome) {
         this.nome = nome;
     }
 
-    public void imprime() {
-        if (this.time == null) {
-            System.out.print("Nome: " + this.nome + " Time: N/D");
+    public Jogador(String nome, Time[] time) {
+        this.nome = nome;
+        this.time = time;
+    }
+
+    public void imprime(){
+        System.out.println("Nome jogador: " + this.nome);
+
+        if(this.time == null){
             return;
         }
 
-        System.out.print("Nome: " + this.nome + " Time: " + this.time.getNome());
+        for (Time time : this.time) {
+            System.out.println(time.getNome());
+        }
+
     }
 
-    public Time getTime() {
-        return time;
-    }
-
-    public void setTime(Time time) {
+    public void setTime(Time[] time) {
         this.time = time;
     }
+
+    public void getTime() {
+        if (this.time == null) {
+            return;
+        }
+
+        for (Time time: this.time){
+            System.out.println(time.getNome());
+        }
+    }
+
 
     public String getNome() {
         return nome;
