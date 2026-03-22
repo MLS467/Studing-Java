@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Gassossiacao.Exercicio.dominio;
+package academy.devdojo.maratonajava.javacore.Gassossiacao.ExercicioAssosssiacao.dominio;
 
 public class Aluno {
     private String nome;

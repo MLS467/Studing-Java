@@ -1,13 +1,13 @@
-package academy.devdojo.maratonajava.javacore.Gassossiacao.Exercicio.test;
+package academy.devdojo.maratonajava.javacore.Gassossiacao.ExercicioAssosssiacao.test;
 
-import academy.devdojo.maratonajava.javacore.Gassossiacao.Exercicio.dominio.Aluno;
-import academy.devdojo.maratonajava.javacore.Gassossiacao.Exercicio.dominio.Local;
-import academy.devdojo.maratonajava.javacore.Gassossiacao.Exercicio.dominio.Professor;
-import academy.devdojo.maratonajava.javacore.Gassossiacao.Exercicio.dominio.Seminario;
+import academy.devdojo.maratonajava.javacore.Gassossiacao.ExercicioAssosssiacao.dominio.Aluno;
+import academy.devdojo.maratonajava.javacore.Gassossiacao.ExercicioAssosssiacao.dominio.Local;
+import academy.devdojo.maratonajava.javacore.Gassossiacao.ExercicioAssosssiacao.dominio.Professor;
+import academy.devdojo.maratonajava.javacore.Gassossiacao.ExercicioAssosssiacao.dominio.Seminario;
 
 import java.util.Scanner;
 
-public class ExercicioTest01 {
+public class ExercicioAssossiacaoTest01 {
     public static void main(String[] args) {
         Scanner dados = new Scanner(System.in);
 

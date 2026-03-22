@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Gassossiacao.Exercicio.dominio;
+package academy.devdojo.maratonajava.javacore.Gassossiacao.ExercicioAssosssiacao.dominio;
 
 public class Seminario {
     private String titulo;
@@ -13,10 +13,15 @@ public class Seminario {
         return alunos;
     }
 
-    public void imprime(){
+    public void imprime() {
         System.out.println("\n -------- Seminário -----------");
         System.out.println("Título Seminário: " + this.titulo);
         this.local.imprime();
+
+        if (this.alunos == null) {
+            return;
+        }
+
         for (Aluno aluno : this.alunos) {
             aluno.imprime();
         }
