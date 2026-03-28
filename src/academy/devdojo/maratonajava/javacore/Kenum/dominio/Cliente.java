@@ -1,36 +1,27 @@
 package academy.devdojo.maratonajava.javacore.Kenum.dominio;
 
 public class Cliente {
-    private String nome;
-    private TiposPessoa tipoCliente;
+    public enum TipoPagamento{
+        DEBITO, CREDITO
+    }
 
-    public Cliente(String nome, TiposPessoa tipoCliente) {
+    private String nome;
+    private TiposPessoa tiposPessoa;
+    private TipoPagamento tipoPagamento;
+
+    public Cliente(String nome, TiposPessoa tiposPessoa, TipoPagamento tipoPagamento) {
         this.nome = nome;
-        this.tipoCliente = tipoCliente;
+        this.tiposPessoa = tiposPessoa;
+        this.tipoPagamento = tipoPagamento;
     }
 
     @Override
     public String toString() {
-
         return "Cliente{" +
                 "nome='" + nome + '\'' +
-                ", tipoCliente=" + tipoCliente +
+                ", tiposPessoa=" + tiposPessoa +
+                ", tiposPessoaValor=" + tiposPessoa.VALOR +
+                ", tipoPagamento=" + tipoPagamento +
                 '}';
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public TiposPessoa getTipoCliente() {
-        return tipoCliente;
-    }
-
-    public void setTipoCliente(TiposPessoa tipoCliente) {
-        this.tipoCliente = tipoCliente;
     }
 }
