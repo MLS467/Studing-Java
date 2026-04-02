@@ -13,6 +13,12 @@ public class CalculadoraImposto {
         System.out.println("Valor R$ " + produto.getValor());
         System.out.println("Imposto " + Math.ceil((valor - produto.getValor())));
         System.out.println("Imposto a ser pago " + valor);
+
+        if(produto instanceof  Tomate){
+//            Tomate produto1 = (Tomate) produto;
+            System.out.println("Data de validade " + ((Tomate) produto).getDataDeValidade());
+        }
+
         System.out.println();
     }
 
@@ -36,7 +42,5 @@ public class CalculadoraImposto {
 //        System.out.println("Imposto a ser pago " + valor);
 //        System.out.println();
 //    }
-
-
 
 }
