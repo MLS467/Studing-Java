@@ -23,18 +23,24 @@ public class RunTimeExceptionTest04 {
         }
 
         // Tratando excessões do tipo checked
+//        try{
+//            talvezLance();
+//        }catch (SQLException  e){
+//            e.printStackTrace();
+//        }catch (FileNotFoundException e){
+//            e.printStackTrace();
+//        }
+
+
+       // multicatch
         try{
             talvezLance();
-        }catch (SQLException  e){
-            e.printStackTrace();
-        }catch (FileNotFoundException e){
+        }catch(SQLException | FileNotFoundException e){
             e.printStackTrace();
         }
-
     }
 
     /**
-     *
      * @throws SQLException
      * @throws FileNotFoundException
      */
